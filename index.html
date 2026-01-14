@@ -1,125 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Althaf Ali | Portfolio</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syed Althaf Ali | Portfolio</title>
+
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<!-- LOGO SECTION -->
+<!-- BACKGROUND SHAPES -->
+<div class="bg-shapes">
+  <span class="circle"></span>
+  <span class="circle"></span>
+  <span class="square"></span>
+  <span class="square"></span>
+</div>
+
 <header>
-    <!-- BRAND -->
-    <div class="brand">
-        <img src="images/logo.png" alt="SA Logo" class="brand-logo">
-
-        <div class="brand-text">
-            <h1>
-                <span>SYED ALTHAF</span>
-            </h1>
-            <p class="tagline">| Portfolio</p>
-        </div>
+  <div class="brand">
+    <img src="images/logo.png" class="brand-logo">
+    <div>
+      <h2><span>SYED</span> ALTHAF</h2>
+      <p class="tagline">| Portfolio</p>
     </div>
+  </div>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a
+      href="https://drive.google.com/file/d/1rH7lKC6GWyjIgkZHhj6-uSMbkFeJGBRj/view?usp=drive_link"
+      target="_blank"
+      class="resume-top-btn">
+      <i class="fa-solid fa-download"></i> Resume
+    </a>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="menu-btn" id="menuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 </header>
 
+<section id="about" class="section reveal">
+  <h2 class="section-title">About Me</h2>
+  <p>
+  Hi, I'm Syed Althaf — a developer focused on learning,
+  building, and improving through real-world projects.
+  I enjoy solving problems with code and continuously
+  strengthening my technical skills through practice.
+</p>
 
-<!-- ABOUT SECTION -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hi, I'm SYED ALTHAF, A developer focused on learning, building, and improving through real projects.</p>
 </section>
 
+<section id="skills" class="section reveal">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-icons">
+    <span><i class="fa-brands fa-html5"></i> HTML</span>
+    <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+    <span><i class="fa-brands fa-js"></i> JavaScript</span>
+    <span><i class="fa-brands fa-java"></i> Java</span>
+    <span><i class="fa-brands fa-c"></i> C</span>
+    <span><i class="fa-brands fa-python"></i> Python</span>
+    <span><i class="fa-solid fa-database"></i> MySQL</span>
+    <span><i class="fa-brands fa-github"></i> GitHub</span>
+  </div>
+</section>
 
-<!-- SKILL SECTION -->
-<section id="skills">
-    <h2>Skills</h2>
+<section id="education" class="section reveal">
+  <h2 class="section-title">Education</h2>
 
-    <div class="skills-icons">
-        <span><i class="fa-brands fa-html5"></i> HTML</span>
-        <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
-        <span><i class="fa-brands fa-js"></i> JavaScript</span>
-        <span><i class="fa-solid fa-c"></i> C</span>
-        <span><i class="fa-brands fa-java"></i> Java</span>
-        <span><i class="fa-brands fa-python"></i> Python</span>
-        <span><i class="fa-solid fa-database"></i> MySQL</span>
-        <span><i class="fa-brands fa-github"></i> Git & GitHub</span>
+  <div class="education">
+
+    <div class="edu-card">
+      <span class="edu-year">2025 – 2027</span>
+      <h3>Masters of Computer Applications ( MCA )</h3>
+      <p>Karnataka State Open University</p>
+      <span class="edu-cgpa">CGPA: -</span>
     </div>
-</section>
 
-
-
-
-<!-- PROJECT SECTION -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects-container">
-        <div class="project-card">
-            <h3>Online Bookstore</h3>
-            <p>“An Online_Book_Store website developed with PHP and MySQL, enabling users to browse and purchase books.”</p>
-            <div class="project-links">
-                <a href="https://github.com/syedalthafali16/Online_book_library" target="_blank">GitHub</a>
-                <a href="https://online-book-sit.netlify.app" target="_blank">Live Demo</a>
-                <h6>*This live demo displays only the frontend interface. The complete project with backend code is available on GitHub.</h6>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3>CarSaga Website</h3>
-            <p>“CarSaga, A front-end website design using HTML, CSS, and JavaScript.”</p>
-            <div class="project-links">
-                <a href="https://github.com/syedalthafali16/CarSaga" target="_blank">GitHub</a>
-                <a href="https://CarSaga.netlify.app" target="_blank">Live Demo</a>
-            </div>
-        </div>
+    <div class="edu-card">
+      <span class="edu-year">2022 – 2025</span>
+      <h3>Bachelor of Computer Applications ( BCA )</h3>
+      <p>Vijayanagara College</p>
+       <span class="edu-cgpa">CGPA: 7.5</span>
     </div>
-</section>
 
-<!-- CONTACT SECTION -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Open to learning, collaboration, and opportunities.</p>
-
-    <div class="contact-links">
-        <a href="mailto:syedaltaf0686@gmail.com">
-            <i class="fa-solid fa-envelope"></i>
-            Gmail
-        </a>
-
-        <a href="https://wa.me/917795450686" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-            WhatsApp
-        </a>
-
-        <a href="https://github.com/syedalthafali16" target="_blank">
-            <i class="fa-brands fa-github"></i>
-            GitHub
-        </a>
-
-        <a href="https://linkedin.com/in/syedalthafali16" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-            LinkedIn
-        </a>
-
-        <a class="resume-btn" href="https://drive.google.com/file/d/1mSSFZQFuz9ETKSIB8kwLlroPJn-qfWVM/view?usp=drive_link" download>
-            <i class="fa-solid fa-download"></i>
-            Download Resume
-        </a>
+    <div class="edu-card">
+      <span class="edu-year">2021 – 2022</span>
+      <h3>Pre-University Education ( 12th )</h3>
+      <p>Govt PU College</p>
+      <span class="edu-cgpa">Percentage: 59%</span>
     </div>
+
+    <div class="edu-card">
+      <span class="edu-year">April-2019</span>
+      <h3>Karnataka Secondary Education Board ( 10th )</h3>
+      <p>Sri Kottureswara Compus</p>
+      <span class="edu-cgpa">Percentage: 66.24%</span>
+    </div>
+
+  </div>
 </section>
 
+
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project reveal">
+    <img src="images/projects/OBS.png">
+    <div class="project-info">
+      <h3>Online Bookstore</h3>
+      <p>An Online_Book_Store website developed with PHP and MySQL, enabling users to browse and purchase books.</p>
+      <div class="project-links">
+        <a href="#">GitHub</a>
+        <a href="#">Live Demo</a>
+        <h6>* This live demo displays only the frontend interface. The complete project with backend code is available on GitHub.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="project reverse reveal">
+    <img src="images/projects/CarSaga.png">
+    <div class="project-info">
+      <h3>CarSaga</h3>
+      <p>CarSaga, A front-end website design using HTML, CSS, and JavaScript.</p>
+      <div class="project-links">
+        <a href="#">GitHub</a>
+        <a href="#">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section reveal">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-links">
+    <a href="mailto:syedaltaf0686@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+    <a href="https://wa.me/917795450686"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://github.com/syedalthafali16"><i class="fa-brands fa-github"></i> GitHub</a>
+    <a href="www.linkedin.com/in/syedalthafali16"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+  </div>
+</section>
+
+<!--  FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h3>SYED ALTHAF ALI</h3>
+      <p>
+        Building modern, clean, and functional digital experiences through continuous learning.
+
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Syed Althaf Ali. All Rights Reserved.</p>
+    <p class="made-with">Built with ❤️ using HTML, CSS & JavaScript</p>
+  </div>
+</footer>
+
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
